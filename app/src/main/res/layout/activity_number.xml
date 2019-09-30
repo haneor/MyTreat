@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_number_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/themefive"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <TextView
+        android:id="@+id/text_number_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="최대 숫자"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_number_toolbar"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <TextView
+        android:id="@+id/text_number_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="뽑을 갯수"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_number_toolbar"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <EditText
+        android:id="@+id/edit_number_max"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/notosanskr_medium_hestia"
+        android:gravity="center"
+        android:hint="0~숫자입력"
+        android:inputType="number"
+        android:maxLength="7"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_number_max" />
+
+    <EditText
+        android:id="@+id/edit_number_count"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="갯수 입력"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_number_count"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <Button
+        android:id="@+id/button_number_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:text="뽑기"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_number_max"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <TextView
+        android:id="@+id/text_number_win"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:hint="추첨된 숫자"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_number_start"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/chatbox"
+        app:layout_constraintBottom_toTopOf="@+id/adView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_number_win" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+    <Switch
+        android:id="@+id/switch_number_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:text="1부터 시작"
+        app:layout_constraintEnd_toStartOf="@+id/button_number_start"
+        app:layout_constraintTop_toBottomOf="@+id/edit_number_max"
+        android:textOff="1부터 시작"
+        android:textOn="0부터 시작"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <Switch
+        android:id="@+id/switch_number_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/notosanskr_medium_hestia"
+        android:gravity="center"
+        android:text="입력값 유지"
+        android:textOff="뽑기 후 \n입력값 유지"
+        android:textOn="뽑기 후 \n입력값 초기화"
+        app:layout_constraintStart_toEndOf="@+id/button_number_start"
+        app:layout_constraintTop_toBottomOf="@+id/edit_number_count" />
+
+</android.support.constraint.ConstraintLayout>

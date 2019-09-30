@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColor_reversal">#f8b195</color>
+    <color name="textColor">#355C7D</color>
+    <color name="menubarColor">#355C7D</color>
+
+    <color name="themeOne">#eec37c</color>
+    <color name="themetwo">#f67280</color>
+    <color name="themethree">#c06c84</color>
+    <color name="themefour">#6c5b7b</color>
+    <color name="themefive">#355c7d</color>
+</resources>

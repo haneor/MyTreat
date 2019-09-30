@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_end_event"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="종료 된 이벤트" />
+
+        <item
+            android:id="@+id/nav_manager"
+            android:title="관리자 목록"
+            android:icon="@drawable/ic_menu_manage" />
+
+        <item
+            android:id="@+id/nav_request"
+            android:title="관리자 신청"
+            android:icon="@drawable/ic_menu_share" />
+
+        <item
+            android:id="@+id/nav_private"
+            android:title="개인 정보 수집 이용동의"
+            android:icon="@drawable/ic_menu_send" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="카카오톡 로그아웃"
+            android:icon="@drawable/ic_menu_slideshow" />
+
+    </group>
+
+</menu>

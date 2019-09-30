@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WheelItemDialog">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="345dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
+
+        <TextView
+            android:id="@+id/text_wheel_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/notosanskr_medium_hestia"
+            android:text="아이템 추가"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/list_wheel_item"
+            android:layout_width="175dp"
+            android:layout_height="270dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/chatbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wheel_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:text='"당첨" 추가'
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_wheel_item" />
+
+        <Button
+            android:id="@+id/button_wheel_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:text='"꽝" 추가'
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_wheel_win" />
+
+        <EditText
+            android:id="@+id/edit_wheel_user"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:hint="직접 입력"
+            android:inputType="textPersonName"
+            android:maxLength="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_wheel_lose" />
+
+        <Button
+            android:id="@+id/button_wheel_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:text="추가"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_wheel_user" />
+
+        <Button
+            android:id="@+id/button_wheel_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:text="완료"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_wheel_user" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="69dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/notosanskr_demilight_hestia"
+            android:text="*아이템은 빨강색부터 순차적으로 들어갑니다"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

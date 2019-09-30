@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaperLotActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_paper_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/themefive"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/themeOne"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_paper_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/activity_paper_imageInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:onClick="onFunctionSetting"
+                app:srcCompat="@drawable/paperimage"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/activity_paper_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/activity_paper_button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/activity_paper_button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/activity_paper_button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/activity_paper_button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/paperitem"
+                    android:fontFamily="@font/notosanskr_demilight_hestia"
+                    android:onClick="onFunctionSetting"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LotteryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_lottery_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/themefive"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/activity_lottery_sub"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/chatbox"
+        android:gravity="center"
+        android:hint="이벤트의 내용이 표시 됩니다."
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_lottery_toolbar"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_lottery_sub">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/activity_lottery_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="20"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:gravity="center"
+                android:text="비밀번호"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/activity_lottery_text1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="20"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:gravity="center"
+                android:text="이름"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/activity_lottery_text2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="20"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:gravity="center"
+                android:text="닉네임"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/activity_lottery_text3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="20"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:gravity="center"
+                android:text="이메일"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/activity_lottery_text4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="20"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:gravity="center"
+                android:text="핸드폰"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/activity_lottery_edit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:ems="10"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/activity_lottery_edit1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:ems="10"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/activity_lottery_edit2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:ems="10"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/activity_lottery_edit3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:ems="10"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/activity_lottery_edit4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:ems="10"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_lottery_editComment"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="응모 내용을 입력하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_lottery_textComment"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <TextView
+        android:id="@+id/activity_lottery_textComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Comment"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+    <Button
+        android:id="@+id/activity_lottery_saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="응모 하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_lottery_editComment"
+        android:fontFamily="@font/notosanskr_medium_hestia"/>
+
+</android.support.constraint.ConstraintLayout>
